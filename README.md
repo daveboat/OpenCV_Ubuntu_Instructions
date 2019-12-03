@@ -36,6 +36,7 @@ nproc
 ## 5. Build and install opencv (this can take more than an hour, depending on your computer)
 ```
 make -j$(nproc) # or replace $(nproc) with the number of cores you want to use
-make install
+sudo make install
 sudo ldconfig
 ```
+If make gets stuck, try decreasing the number of threads (-j#), or increasing swap space.
